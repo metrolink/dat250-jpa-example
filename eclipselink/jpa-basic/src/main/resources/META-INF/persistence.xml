@@ -2,13 +2,24 @@
 <persistence xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
              xsi:schemaLocation="http://java.sun.com/xml/ns/persistence http://java.sun.com/xml/ns/persistence/persistence_2_0.xsd"
              version="2.0" xmlns="http://java.sun.com/xml/ns/persistence">
-    <persistence-unit name="todos" transaction-type="RESOURCE_LOCAL">
-        <class>no.hvl.dat250.jpa.basicexample.Todo</class>
+    <persistence-unit name="Bank" transaction-type="RESOURCE_LOCAL">
+    
+        
+        <class>no.hvl.dat250.jpa.ex2.Person</class>
+         <class>no.hvl.dat250.jpa.ex2.Bank</class> 
+        <class>no.hvl.dat250.jpa.ex2.Credit</class>
+        <class>no.hvl.dat250.jpa.ex2.Address</class>
+        <class>no.hvl.dat250.jpa.ex2.Pin</class> 
+         <!-- <class>no.hvl.dat250.jpa.basicexample.Todo</class> 
+         <class>no.hvl.dat250.jpa.model.Person</class> 
+        <class>no.hvl.dat250.jpa.model.Family</class>
+        <class>no.hvl.dat250.jpa.model.Job</class> -->
+        
         <properties>
             <property name="javax.persistence.jdbc.driver" value="org.apache.derby.jdbc.EmbeddedDriver"/>
                       <!-- TODO Change the path in the value of the property "javax.persistence.jdbc.url" here! -->
             <property name="javax.persistence.jdbc.url"
-                      value="jdbc:derby:C:\Source\testdb;create=true"/>
+                      value="jdbc:derby:C:\Users\toan\Documents\Universitet i bergen\HVL\DAT250\dat250-jpa-example\eclipselink\jpa-basic\testdb;create=true"/>
             <property name="javax.persistence.jdbc.user" value="test"/>
             <property name="javax.persistence.jdbc.password" value="test"/>
 
